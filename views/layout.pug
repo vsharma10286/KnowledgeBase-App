@@ -1,0 +1,26 @@
+doctype html
+html
+ head
+    title knowledgebase
+    link(rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet' href='/css/style.css')
+ body
+  nav#navbar-example2.navbar
+    a.navbar-brand(href='/') knowledgeBase
+    ul.nav.nav-pills
+        li.nav-item
+        a.nav-link(href='/') Home
+        li.nav-item
+        a.nav-link(href='/articles/add') Add Articles
+        li.nav-item.dropdown
+  .container
+    block content
+
+    br
+  hr
+footer
+    p copyright &copy; 2019
+
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.js')    
+script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
+script(src='/js/main.js')

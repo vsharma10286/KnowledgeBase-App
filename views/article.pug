@@ -1,0 +1,11 @@
+extend layout
+
+block content
+
+    h3 #{article.title}
+    h6 writter by #{article.author}
+
+    br
+    a.btn.btn-primary(href='/articles/edit/'+article._id) Edit
+
+      a.btn.btn-danger.delete-article(href='#', data-id=article._id) Delete 
